@@ -24,8 +24,9 @@ export default function  BookCatalog  ({books}){
            <select onChange={e=>handleChangeCategory(e.target.value)}>
                <option value='all'>Wszystko</option>
                <option value='Magiczny realizm'>Magiczny realizm</option>
-               <option value= 'Dystopia'>Dystopia</option>
+               <option value= 'Klasyka'>Klasyka</option>
                <option value = 'Fantasy'>fantasy</option>
+               <option value = 'Dystopia'>Dystopia</option>
 
            </select>
 
