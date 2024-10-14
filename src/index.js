@@ -14,3 +14,5 @@ import books from './data/data.json'
 
 let root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<BookCatalog books={books}/>)
+let root2 = ReactDOM.createRoot(document.getElementById('root2'))
+root2.render(React.createElement('h2', null, 'aaa'))
