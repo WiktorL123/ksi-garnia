@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, rgba( 79,92,106,0.27), rgba(171, 228, 223, 0.83));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.book-box{
+    margin: 10px 0;
+    width: 800px;
+}
+.book-box_element{
+    text-align: center;
+    border: 2px solid cornflowerblue;
+    background: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
