@@ -10,7 +10,7 @@ export default function  BookCatalog  ({books}){
 
             bookDivs.forEach(bookDiv=>{
                 const category = bookDiv.getAttribute('data-category');
-                category === 'all' || category===value? bookDiv.style.display='block':bookDiv.style.display='none'
+                value === 'all' || category===value? bookDiv.style.display='block':bookDiv.style.display='none'
 
             })
 
@@ -20,11 +20,12 @@ export default function  BookCatalog  ({books}){
 
 
        return <div className={'book-box'}>
+           <p>filtruj kategorie</p>
            <select onChange={e=>handleChangeCategory(e.target.value)}>
                <option value='all'>Wszystko</option>
                <option value='Magiczny realizm'>Magiczny realizm</option>
                <option value= 'Dystopia'>Dystopia</option>
-               <option value = 'Fantasty'>fantasy</option>
+               <option value = 'Fantasy'>fantasy</option>
 
            </select>
 
